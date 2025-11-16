@@ -41,26 +41,38 @@ header .subtitle {
   margin: 0;
   display: flex;              
   justify-content: center;
-  gap: 15px;
+  gap: 10px;                 /* spazio tra i link */
   flex-wrap: nowrap;          /* mai a capo */
+  overflow-x: auto;           /* scroll orizzontale se necessario */
 }
 
 .main-nav li {
-  display: inline-block;
+  flex-shrink: 1;             /* i link si restringono se serve */
 }
+
 .main-nav a {
   text-decoration: none;
   color: #3d1f3c;
   font-weight: 500;
-  font-size: clamp(0.8rem, 4vw, 1.1rem); /* riduce automaticamente su schermi piccoli */
-  padding: 5px 10px;
+  font-size: 1rem;            /* punto di partenza */
+  padding: 5px 8px;
   border-radius: 8px;
+  white-space: nowrap;        /* testo mai a capo */
+  display: inline-block;
   transition: 0.25s ease;
 }
 
 .main-nav a:hover {
   background-color: #ffdde6;
   color: #a33d60;
+}
+
+/* Font più piccolo su schermi piccolissimi */
+@media (max-width: 360px) {
+  .main-nav a {
+    font-size: 0.8rem;
+    padding: 4px 6px;
+  }
 }
 
 /* ================== Card ================== */
