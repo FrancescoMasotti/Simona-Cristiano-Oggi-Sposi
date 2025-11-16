@@ -39,21 +39,20 @@ header .subtitle {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;                /* nav orizzontale sempre */
+  display: flex;              
   justify-content: center;
-  flex-wrap: wrap;              /* va a capo se lo schermo è piccolissimo */
-  gap: 15px;                    /* spazio tra i link */
+  gap: 15px;
+  flex-wrap: nowrap;          /* mai a capo */
 }
 
 .main-nav li {
   display: inline-block;
 }
-
 .main-nav a {
   text-decoration: none;
   color: #3d1f3c;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: clamp(0.8rem, 4vw, 1.1rem); /* riduce automaticamente su schermi piccoli */
   padding: 5px 10px;
   border-radius: 8px;
   transition: 0.25s ease;
