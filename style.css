@@ -205,6 +205,7 @@ footer {
 }
 
 /* ================== Hamburger Menu ================== */
+/* ================== Hamburger Menu ================== */
 #menu-toggle {
   display: none;
 }
@@ -236,7 +237,8 @@ footer {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
 
-  #menu-toggle:checked + .hamburger + .main-nav ul {
+  /* FUNZIONA SU TUTTI I FILE */
+  #menu-toggle:checked ~ .main-nav ul {
     display: flex;
   }
 
