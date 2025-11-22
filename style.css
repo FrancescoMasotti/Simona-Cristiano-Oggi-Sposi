@@ -39,40 +39,29 @@ header .subtitle {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;              
+  display: flex;                /* nav orizzontale sempre */
   justify-content: center;
-  gap: 10px;                 /* spazio tra i link */
-  flex-wrap: nowrap;          /* mai a capo */
-  overflow-x: auto;           /* scroll orizzontale se necessario */
+  flex-wrap: wrap;              /* va a capo se lo schermo è piccolissimo */
+  gap: 15px;                    /* spazio tra i link */
 }
 
 .main-nav li {
-  flex-shrink: 1;             /* i link si restringono se serve */
+  display: inline-block;
 }
 
 .main-nav a {
   text-decoration: none;
   color: #3d1f3c;
   font-weight: 500;
-  font-size: 1rem;            /* punto di partenza */
-  padding: 5px 8px;
+  font-size: 1.1rem;
+  padding: 5px 10px;
   border-radius: 8px;
-  white-space: nowrap;        /* testo mai a capo */
-  display: inline-block;
   transition: 0.25s ease;
 }
 
 .main-nav a:hover {
   background-color: #ffdde6;
   color: #a33d60;
-}
-
-/* Font più piccolo su schermi piccolissimi */
-@media (max-width: 360px) {
-  .main-nav a {
-    font-size: 0.8rem;
-    padding: 4px 6px;
-  }
 }
 
 /* ================== Card ================== */
@@ -213,4 +202,45 @@ footer {
   align-items: center;     
   font-weight: 500;
   font-size: 1.1rem;
+}
+
+/* ================== Hamburger Menu ================== */
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  user-select: none;
+}
+
+/* NAV mobile */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    background: #ffe6f0;
+    padding: 20px 0;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  #menu-toggle:checked + .hamburger + .main-nav ul {
+    display: flex;
+  }
+
+  .main-nav ul li {
+    margin: 12px 0;
+  }
 }
