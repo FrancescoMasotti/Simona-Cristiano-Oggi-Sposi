@@ -53,7 +53,19 @@
   <p>© 2027 Matrimonio di Simona & Cristiano</p>
 </footer>
 
-<!-- SCRIPT HAMBURGER -->
-<script src="menu.js"></script>
-</body>
-</html>
+<!-- SCRIPT HAMBURGER SICURO -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".main-nav ul");
+  
+    if(menuBtn && navMenu){
+      menuBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("open");
+      });
+    }
+  });
+  </script>
+  
+  </body>
+  </html>
