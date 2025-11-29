@@ -59,9 +59,8 @@ header .subtitle {
   font-weight: 500;
   font-size: 1.1rem;
   padding: 7px 12px;
-  border-radius: 8px;
+  border-radius: 15px;
   background: rgba(255, 240, 245, 0.7);
-  border: 1px solid rgba(255, 200, 215, 0.5);
   transition: 0.25s ease;
 }
 
@@ -219,7 +218,7 @@ footer {
     background: #ffe6f0;
     padding: 20px 0;
     margin-top: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 
         0 4px 12px rgba(0,0,0,0.08),
         0 0 10px rgba(255,200,215,0.35);
