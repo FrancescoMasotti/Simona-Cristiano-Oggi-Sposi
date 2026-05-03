@@ -1,7 +1,7 @@
 /* ================== Base ================== */
 body {
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(135deg, #fff3f8, #ffe7ef);
+  background: linear-gradient(135deg, #fff8f2, #f3e8ff, #ffe4ec);
   color: #3d1f3c;
   margin: 0;
   padding: 0 0 60px;
@@ -14,22 +14,22 @@ body {
 header {
   text-align: center;
   padding: 30px 20px;
-  background: linear-gradient(135deg, #ffd1dc, #ffc2d1);
-  box-shadow: 0 4px 14px rgba(255, 180, 200, 0.35);
-  border-bottom: 1px solid rgba(255, 200, 215, 0.7);
+  background: linear-gradient(135deg, #ffd1dc, #d8c4f1);
+  box-shadow: 0 4px 14px rgba(138, 95, 162, 0.25);
+  border-bottom: 1px solid rgba(200, 180, 220, 0.6);
 }
 
 header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2.4em;
   margin: 0;
-  color: #a33d60;
+  color: #8a5fa2;
 }
 
 header .subtitle {
   font-size: 1.2em;
   margin-top: 5px;
-  color: #8a2f52;
+  color: #a36bb5;
 }
 
 /* ================== Nav ================== */
@@ -46,7 +46,6 @@ header .subtitle {
   justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
-  transition: all 0.3s ease;
 }
 
 .main-nav li {
@@ -55,7 +54,7 @@ header .subtitle {
 
 .main-nav a {
   text-decoration: none;
-  color: #54263f;
+  color: #5a2d6b;
   font-weight: 500;
   font-size: 1.1rem;
   padding: 7px 12px;
@@ -65,38 +64,37 @@ header .subtitle {
 }
 
 .main-nav a:hover {
-  background-color: #ffe0ea;
-  color: #a33d60;
-  box-shadow: 0 3px 10px rgba(255, 180, 200, 0.4);
+  background-color: #f3e8ff;
+  color: #8a5fa2;
+  box-shadow: 0 3px 10px rgba(138, 95, 162, 0.3);
 }
 
 /* ================== Card ================== */
 .card {
-  background: #ffe6f0;
+  background: #fff8f2;
   margin: 20px auto;
   padding: 20px;
   max-width: 800px;
   border-radius: 15px;
 
-  /* glitter soft */
   background-image: radial-gradient(
-      rgba(255,255,255,0.18) 1px, 
+      rgba(255,255,255,0.2) 1px, 
       transparent 1px
     );
   background-size: 12px 12px;
 
-  border: 1px solid rgba(255, 190, 210, 0.7);
+  border: 1px solid rgba(200, 180, 220, 0.6);
   box-shadow: 
       0 4px 12px rgba(0,0,0,0.08),
-      0 0 10px rgba(255, 200, 215, 0.35);
+      0 0 10px rgba(200, 180, 220, 0.3);
 }
 
 .section-title {
   font-family: 'Playfair Display', serif;
   font-size: 1.8em;
   margin-bottom: 15px;
-  color: #a33d60;
-  text-shadow: 0 0 4px rgba(255,180,200,0.4);
+  color: #8a5fa2;
+  text-shadow: 0 0 8px rgba(138, 95, 162, 0.3);
 }
 
 /* ================== Liste ================== */
@@ -114,7 +112,7 @@ ul li {
 /* Tabelle Tavoli */
 .tavolo h3 {
   margin-bottom: 8px;
-  color: #d94f7c;
+  color: #a36bb5;
 }
 
 .tavolo ul li {
@@ -129,11 +127,11 @@ ul li {
   overflow: hidden;
   box-shadow: 
         0 4px 15px rgba(0,0,0,0.08),
-        0 0 10px rgba(255,200,215,0.35);
+        0 0 10px rgba(200, 180, 220, 0.3);
   display: inline-block;
   text-align: center;
   max-width: 800px;
-  border: 1px solid rgba(255, 190, 210, 0.6);
+  border: 1px solid rgba(200, 180, 220, 0.5);
 }
 
 .map-frame {
@@ -155,22 +153,21 @@ ul li {
 }
 
 .contact-btn {
-  background: #ff9abb;
+  background: linear-gradient(135deg, #ff9abb, #d8c4f1);
   color: white;
   padding: 15px 28px;
   border-radius: 30px;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 600;
-  box-shadow: 0 4px 12px rgba(255, 150, 180, 0.4);
-  border: 1px solid rgba(255, 180, 200, 0.6);
+  box-shadow: 0 4px 12px rgba(138, 95, 162, 0.3);
+  border: 1px solid rgba(200, 180, 220, 0.6);
   transition: 0.25s ease;
 }
 
 .contact-btn:hover {
-  background: #ff7fa8;
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(255, 130, 170, 0.45);
+  box-shadow: 0 6px 16px rgba(138, 95, 162, 0.4);
 }
 
 /* ================== Footer ================== */
@@ -180,14 +177,14 @@ footer {
   left: 0;
   width: 100%;
   height: 60px;
-  background: #ffd1dc;
+  background: linear-gradient(135deg, #ffd1dc, #d8c4f1);
   color: #3d1f3c;
   display: flex;
   justify-content: center; 
   align-items: center;     
   font-weight: 500;
   font-size: 1.1rem;
-  box-shadow: 0 -3px 10px rgba(255, 150, 180, 0.2);
+  box-shadow: 0 -3px 10px rgba(138, 95, 162, 0.2);
 }
 
 /* ================== Hamburger Menu ================== */
@@ -201,7 +198,7 @@ footer {
   cursor: pointer;
   padding: 10px;
   user-select: none;
-  color: #a33d60;
+  color: #8a5fa2;
 }
 
 /* NAV mobile */
@@ -215,14 +212,14 @@ footer {
   .main-nav ul {
     display: none;
     flex-direction: column;
-    background: #ffe6f0;
+    background: #fff8f2;
     padding: 20px 0;
     margin-top: 10px;
     border-radius: 15px;
     box-shadow: 
         0 4px 12px rgba(0,0,0,0.08),
-        0 0 10px rgba(255,200,215,0.35);
-    border: 1px solid rgba(255, 200, 215, 0.5);
+        0 0 10px rgba(200, 180, 220, 0.3);
+    border: 1px solid rgba(200, 180, 220, 0.5);
   }
 
   .main-nav ul.open {
@@ -234,6 +231,7 @@ footer {
   }
 }
 
+/* Tabelle */
 table {
   border-collapse: separate;
   border-spacing: 20px;
